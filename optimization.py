@@ -1,7 +1,6 @@
 import numpy as np
 
 from drawing import stroke
-from sp_model import make_model
 from scipy.optimize import basinhopping
 import matplotlib.pyplot as plt
 
@@ -37,6 +36,7 @@ def generate_n_optimizations(n, model):
 
 if __name__ == "__main__":
 
+    from sp_model import make_model
     model = make_model()
     for _ in range(10):
         result = basinhopping(square_drawing_loss, (np.random.uniform(0, 1, 16)),

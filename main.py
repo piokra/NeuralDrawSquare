@@ -17,6 +17,7 @@ def append_second(to, what):
 if __name__ == "__main__":
     training = []
     low_history = []
+    
     high_history = []
     mid_history = []
     model = make_model()
